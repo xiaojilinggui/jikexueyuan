@@ -5,9 +5,11 @@
 }
 
 body{
+  background-color: #fff;
+}
+.main-container{
   background-color: #f4f4f4;
 }
-
 .page-header{
  display: flex;
  justify-content: center;
@@ -183,7 +185,7 @@ body{
   background-color: #fafafa; 
 }
 .rightsidebar-content a{
-  color: #a0aeb9;
+  color: #333;
   margin-left: 10px;
   margin-right: 15px;
   vertical-align: middle;
@@ -473,52 +475,100 @@ body{
   color: #999;
 }
 
-/*.lunbo-contant-title{
-  display: inline-block;
-  margin: 0 auto;
-  text-align: center;
-  color: #fff;
-  background: #f88;
-  width:60px;
-  height: 20px;
-  margin-top: 10px;
-  font-size: 12px;
+.company-container{
+  display: flex;
+  justify-content: center;
 }
-.lunbo-contant p{
-  position: absolute;
-  top: 35px;
-  left: 37px;
+.company-title{
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  height: 40px;
+  margin-top: 20px;
+}
+.company-contant{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1000px;
+  margin-bottom: 70px;
+}
+.company-contant a{
+  margin-bottom: 5px;
+}
+.company-contant img:hover{
+   box-shadow: 3px 5px 5px #dedede;
+}
+.company-title a{
   font-size: 12px;
-  height: 90px;
-  color: #555;
-  padding: 0 32px;
+  color: #333;
+}
+.company-title a:hover{
+  color: #54c071;
 }
 
-.contant-intro{
-  width: 327px;
-  height: 70px;
-  margin-top: 16px;
-  position: relative;
-  background: #fafafa;
+.page-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
 }
-.lunbo-contant{
-  position: relative;
+.footer-container{
+  display: flex;
+  flex-direction: column;
 }
-.lunbo-contant-intro{
-  position: relative;
-  height: 70px;
-  top: 80px;
-  background: #fafafa;
+.footer-contant-list{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin:20px 0  0  0;
+  width: 1000px;
+  padding: 10px;
+  color:#f0f0f0;
+  border-bottom: 1px solid #f0f0f0;;
 }
-.lunbo-contant-intro img{
-  position: absolute;
-  top: 10px;
-  left: 5px;
-}
-.lunbo-contant-intro strong{
-  position: absolute;
-  left: 70px;
-  top: 15px;
+
+.footer-contant-list li{
   font-size: 12px;
-  color: #555;
-}*/
+}
+.footer-contant-list li:hover{
+ color: #54c071;
+}
+.footer-contant-img{
+  display: flex;
+  justify-content: center;
+}
+.fab{
+  margin-right: 20px;
+  height:18px;
+  width: 22px;
+}
+.fa-weixin{
+  color: #54c071;
+}
+.fa-weibo{
+  color: #ee3c10;
+}
+.fa-twitter{
+  color: #44ece6;
+}
+.fa-google-plus{
+  color: #ec5e49
+}
+
+.footer-contant-list a:hover{
+ color: #54c071;
+}
+.footer-contant-list a{
+  padding: 4px 10px;
+  color: #666;
+}
+
+.copyright{
+  font-size: 12px;
+  color: #999;
+  padding:10px 0;
+  text-align: center;
+}
+
+
