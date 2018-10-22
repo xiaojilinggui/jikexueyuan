@@ -33,6 +33,11 @@ body{
   margin-right: 100px;
   margin-left: 20px;
 }
+.nav-list li{
+  display: flex;
+  align-items: center;
+  height: 70px;
+}
 .nav-item{
   display: flex;
   list-style-type: none;
@@ -137,7 +142,8 @@ body{
   border-bottom: 1px solid rgba(255,255,255,.2);
 }
 
-.leftsidebar-content a{
+.wrap-qd{
+  display: block;
   color: #fff;
   font-size: 14px;
   padding-left: 6px;
@@ -145,11 +151,11 @@ body{
 }
 .leftsidebar-content:hover{
   background-color: #fff;
+}
+.leftsidebar-content:hover .wrap-qd{
   color: #000;
 }
-.leftsidebar-content a:hover{
-  color: #000;
-}
+
 .fa-angle-right{
   color: #b2b2b2;
   padding-right: 6px;
@@ -538,10 +544,8 @@ body{
   display: flex;
   justify-content: center;
 }
-.fab{
-  margin-right: 20px;
-  height:18px;
-  width: 22px;
+.footer-contant-img a{
+  margin:0 10px;
 }
 .fa-weixin{
   color: #54c071;
@@ -571,4 +575,217 @@ body{
   text-align: center;
 }
 
+.unfold:hover .conceal{
+  display: block;
+}
+.conceal{
+  position: absolute;
+  height: 398px;
+  width: 792px;
+  left: 210px;
+  display: none;
+  top: 0px;
+  color: #333;
+  background-color: #fff;
+}
 
+.conceal-contant span{
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 1px;
+  width:60px;
+  font-size: 13px;
+  color: #fff;
+  background-color: #a0aeb9;
+}
+.contant-spread{
+  padding: 20px 20px 15px;
+}
+.spread-title{
+  border-bottom: 1px solid #999;
+  width: 750px;
+}
+.spread-list{
+  display: flex;
+  align-items: center;
+  width: 750px;
+  height: 43px;
+  border-top: 1px solid #f0f0f0;
+}
+.spread-item{
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  font-size: 12px;
+  color: #666;
+}
+.spread{
+  font-size: 13px;
+  margin-right: 20px;
+ /* padding: 10px 0;*/
+}
+.spread-item li{
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.spread-item li:hover{
+  color: #35b558;
+}
+.recommend-spread{
+  padding: 0 20px;
+}
+.recommend-title{
+  border-bottom: 1px solid #35b558;
+  width: 750px;
+}
+.recommend-title span{
+  display: inline-block;
+  text-align: center;
+  width: 60px;
+  font-size: 13px;
+  color: #fff;
+  background-color: #35b558;
+  padding-bottom: 1px; 
+}
+
+.recommend-list{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  font-size: 12px
+}
+.recommend-list li{
+  display: flex;
+  align-items: center;
+  height: 39px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.recommend-list a{
+  color: #999;
+}
+.recommend-list a:hover{
+  color: #35b558;
+}
+
+
+.houduan:hover .afterend-container{
+  display: block;
+}
+
+.afterend-container{
+  position: absolute;
+  height: 360px;
+  width: 792px;
+  left: 210px;
+  display: none;
+  top: 0px;
+  color: #333;
+  background-color: #fff;
+}
+.afterend-top-list{
+  width: 750px;
+  padding: 20px 20px 15px;
+}
+.afterend-title{
+  border-bottom: 1px solid #35b558;
+  width: 750px;
+}
+.afterend-title span{
+  display: inline-block;
+  width: 60px;
+  height: 20px;
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+  background-color: #35b558;   
+}
+.afterend-top-title span{
+  display: inline-block;
+  width: 60px;
+  height: 18px;
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+  background-color: #a0aeb9;
+}
+
+.afterend-top-title{
+  border-bottom: 1px solid #999;
+  width: 750px;
+}
+.afterend-list{
+ display: flex;
+ align-items: center;
+ width: 750px;
+ height: 43px;
+ border-top: 1px solid #f0f0f0;
+}
+.afterend{
+  font-size: 13px;
+  margin-right: 20px;
+}
+.afterend-item{
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  font-size: 12px;
+  color: #666;
+}
+
+.afterend-tuijian{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  font-size: 12px
+}
+.afterend-tuijian li{
+  display: flex;
+  align-items: center;
+  height: 39px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.afterend-tuijian a{
+  color: #999;
+}
+.afterend-tuijian a:hover{
+  color: #35b558;
+}
+
+
+.zhiye:hover .drop-container{
+  display: block;
+}
+.drop-container{
+  position: absolute;
+  top: 70px;
+  width: 200px;
+  z-index: 1000;
+  display: none;
+  background: #fff;
+  border-top: 1px solid #E4E4E4;
+}
+.drop-container strong{
+  display: block;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: normal;
+  padding: 0px 15px;
+  color: #b9b9b9;
+  background: #fafafa;
+}
+.drop-item img{
+  width: 17px;
+  height: 17px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.drop-item{
+  display: inline-block;
+  color: #333;
+  font-size: 12px;
+  line-height: 30px;
+  width: 170px;
+  padding: 0  15px;
+}
